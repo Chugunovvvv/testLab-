@@ -15,7 +15,7 @@ link.forEach(el => {
     el.addEventListener('click', () => {
         menu.classList.remove('active');
     burger.classList.remove('header__burger--active');
-    logoText.classList.remove('acitve-text');
+    logoText.classList.remove('active-text');
     body.classList.remove('lock');
     })
 });
