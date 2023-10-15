@@ -192,6 +192,11 @@ body.lock {
     padding-bottom: 175px;
   }
 }
+@media (max-width: 640px) {
+  .header {
+    padding-bottom: 180px;
+  }
+}
 .header__top {
   display: flex;
   justify-content: space-between;
@@ -204,13 +209,18 @@ body.lock {
 .header__logo {
   display: flex;
   gap: 9px;
+  position: relative;
+  z-index: 1000;
 }
 .header__logo-text {
   color: #fff;
   font-size: 20px;
   font-weight: 600;
   line-height: 120%;
-  transition: all 0.3s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+.header__logo-text.active-text {
+  color: #000;
 }
 .header__menu {
   display: flex;
@@ -254,6 +264,11 @@ body.lock {
 .bottom-header {
   padding-top: 223px;
 }
+@media (max-width: 640px) {
+  .bottom-header {
+    padding-top: 100px;
+  }
+}
 @media (max-width: 425px) {
   .bottom-header {
     padding-top: 92px;
@@ -261,6 +276,8 @@ body.lock {
 }
 .bottom-header__content {
   text-align: center;
+  max-width: 748px;
+  margin: auto;
 }
 .bottom-header__title {
   font-size: 52px;
@@ -268,9 +285,16 @@ body.lock {
   line-height: 123%;
   margin-bottom: 18px;
 }
+@media (max-width: 640px) {
+  .bottom-header__title {
+    font-size: 35px;
+    margin-bottom: 16px;
+  }
+}
 @media (max-width: 425px) {
   .bottom-header__title {
     font-size: 24px;
+    margin-bottom: 15px;
   }
 }
 .bottom-header__subtitle {
@@ -280,7 +304,7 @@ body.lock {
 }
 @media (max-width: 425px) {
   .bottom-header__subtitle {
-    font-size: 17px;
+    font-size: 16px;
     margin-bottom: 26px;
   }
 }
@@ -422,6 +446,11 @@ body.lock {
   height: auto;
 }
 
+.swiper-button-prev:after {
+  position: absolute;
+  top: -30px;
+  left: -7px;
+}
 @media (max-width: 768px) {
   .swiper-button-prev:after {
     opacity: 0;
@@ -429,6 +458,11 @@ body.lock {
   }
 }
 
+.swiper-button-next:after {
+  position: absolute;
+  top: -30px;
+  right: -7px;
+}
 @media (max-width: 768px) {
   .swiper-button-next:after {
     opacity: 0;
