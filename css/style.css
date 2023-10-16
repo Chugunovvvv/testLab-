@@ -643,6 +643,10 @@ body.lock {
 }
 
 /* form footer */
+.form1 {
+  position: relative;
+}
+
 .form {
   padding: 80px 0;
 }
@@ -732,6 +736,15 @@ body.lock {
   .form__btn {
     width: 100%;
   }
+}
+
+.input__box {
+  width: 100%;
+}
+
+#error {
+  margin-top: 5px;
+  color: red;
 }
 
 .footer {

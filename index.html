@@ -314,7 +314,11 @@
             <div class="form__container container">
                 <h4 class="form__title allTitle">Отправить форму</h4>
                 <form class="form__inputs">
-                    <input required placeholder="Имя" type="text" class="form__input">
+                    <div class="input__box">
+                        <input required placeholder="Имя" type="text" class="form__input form1" id="contact-name" onkeyup="validateName()">
+                    <span id="error"></span>
+                    </div>
+                    
                     <input placeholder="Телефон" type="tel" class="form__input">
                 </form>
                 <div class="form__btns">

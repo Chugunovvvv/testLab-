@@ -639,7 +639,9 @@ padding: 68px 0;
 }
 
 /* form footer */ 
-
+.form1 {
+    position: relative;
+}
 .form {
     padding: 80px 0;
     @media(max-width: 644px) {
@@ -682,6 +684,7 @@ padding: 68px 0;
             font-size: 18px;
             line-height: 177%;
         }
+
        
     }
 
@@ -728,8 +731,13 @@ padding: 68px 0;
         }
     }
 }
-
-
+.input__box {
+    width: 100%;
+}
+#error {
+    margin-top: 5px;
+    color: red;
+}
 .footer {
     padding: 28px 0;
     border-top: 1px solid #ECEFF2;
