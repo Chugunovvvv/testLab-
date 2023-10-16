@@ -16,3 +16,14 @@ function validateName() {
     inputName.style.border = ''
     return true;
 }
+
+function allValidate() {
+    if(!validateName()) {
+        error.innerHTML = 'Пожалуйста, введите корректное имя';
+        inputName.style.border = '2px solid red';
+        return false;
+    }
+    error.innerHTML = '';
+    inputName.style.border = ''
+    return true;
+}
